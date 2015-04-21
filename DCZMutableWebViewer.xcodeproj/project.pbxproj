@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		281CF7871AE6E01C00BC1F25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF7861AE6E01C00BC1F25 /* main.m */; };
+		281CF78A1AE6E01C00BC1F25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF7891AE6E01C00BC1F25 /* AppDelegate.m */; };
+		281CF78D1AE6E01C00BC1F25 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF78C1AE6E01C00BC1F25 /* MasterViewController.m */; };
+		281CF7901AE6E01C00BC1F25 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF78F1AE6E01C00BC1F25 /* DetailViewController.m */; };
+		281CF7931AE6E01C00BC1F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281CF7911AE6E01C00BC1F25 /* Main.storyboard */; };
+		281CF7951AE6E01C00BC1F25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281CF7941AE6E01C00BC1F25 /* Images.xcassets */; };
+		281CF7981AE6E01C00BC1F25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281CF7961AE6E01C00BC1F25 /* LaunchScreen.xib */; };
+		281CF7A41AE6E01C00BC1F25 /* DCZMutableWebViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF7A31AE6E01C00BC1F25 /* DCZMutableWebViewerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		281CF79E1AE6E01C00BC1F25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 281CF7791AE6E01C00BC1F25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 281CF7801AE6E01C00BC1F25;
+			remoteInfo = DCZMutableWebViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		281CF7811AE6E01C00BC1F25 /* DCZMutableWebViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCZMutableWebViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		281CF7851AE6E01C00BC1F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281CF7861AE6E01C00BC1F25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		281CF7881AE6E01C00BC1F25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		281CF7891AE6E01C00BC1F25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		281CF78B1AE6E01C00BC1F25 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		281CF78C1AE6E01C00BC1F25 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		281CF78E1AE6E01C00BC1F25 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		281CF78F1AE6E01C00BC1F25 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		281CF7921AE6E01C00BC1F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		281CF7941AE6E01C00BC1F25 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		281CF7971AE6E01C00BC1F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		281CF79D1AE6E01C00BC1F25 /* DCZMutableWebViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCZMutableWebViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		281CF7A21AE6E01C00BC1F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281CF7A31AE6E01C00BC1F25 /* DCZMutableWebViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCZMutableWebViewerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		281CF77E1AE6E01C00BC1F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281CF79A1AE6E01C00BC1F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		281CF7781AE6E01C00BC1F25 = {
+			isa = PBXGroup;
+			children = (
+				281CF7831AE6E01C00BC1F25 /* DCZMutableWebViewer */,
+				281CF7A01AE6E01C00BC1F25 /* DCZMutableWebViewerTests */,
+				281CF7821AE6E01C00BC1F25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		281CF7821AE6E01C00BC1F25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				281CF7811AE6E01C00BC1F25 /* DCZMutableWebViewer.app */,
+				281CF79D1AE6E01C00BC1F25 /* DCZMutableWebViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		281CF7831AE6E01C00BC1F25 /* DCZMutableWebViewer */ = {
+			isa = PBXGroup;
+			children = (
+				281CF7881AE6E01C00BC1F25 /* AppDelegate.h */,
+				281CF7891AE6E01C00BC1F25 /* AppDelegate.m */,
+				281CF78B1AE6E01C00BC1F25 /* MasterViewController.h */,
+				281CF78C1AE6E01C00BC1F25 /* MasterViewController.m */,
+				281CF78E1AE6E01C00BC1F25 /* DetailViewController.h */,
+				281CF78F1AE6E01C00BC1F25 /* DetailViewController.m */,
+				281CF7911AE6E01C00BC1F25 /* Main.storyboard */,
+				281CF7941AE6E01C00BC1F25 /* Images.xcassets */,
+				281CF7961AE6E01C00BC1F25 /* LaunchScreen.xib */,
+				281CF7841AE6E01C00BC1F25 /* Supporting Files */,
+			);
+			path = DCZMutableWebViewer;
+			sourceTree = "<group>";
+		};
+		281CF7841AE6E01C00BC1F25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				281CF7851AE6E01C00BC1F25 /* Info.plist */,
+				281CF7861AE6E01C00BC1F25 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		281CF7A01AE6E01C00BC1F25 /* DCZMutableWebViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				281CF7A31AE6E01C00BC1F25 /* DCZMutableWebViewerTests.m */,
+				281CF7A11AE6E01C00BC1F25 /* Supporting Files */,
+			);
+			path = DCZMutableWebViewerTests;
+			sourceTree = "<group>";
+		};
+		281CF7A11AE6E01C00BC1F25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				281CF7A21AE6E01C00BC1F25 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		281CF7801AE6E01C00BC1F25 /* DCZMutableWebViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281CF7A71AE6E01C00BC1F25 /* Build configuration list for PBXNativeTarget "DCZMutableWebViewer" */;
+			buildPhases = (
+				281CF77D1AE6E01C00BC1F25 /* Sources */,
+				281CF77E1AE6E01C00BC1F25 /* Frameworks */,
+				281CF77F1AE6E01C00BC1F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCZMutableWebViewer;
+			productName = DCZMutableWebViewer;
+			productReference = 281CF7811AE6E01C00BC1F25 /* DCZMutableWebViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		281CF79C1AE6E01C00BC1F25 /* DCZMutableWebViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281CF7AA1AE6E01C00BC1F25 /* Build configuration list for PBXNativeTarget "DCZMutableWebViewerTests" */;
+			buildPhases = (
+				281CF7991AE6E01C00BC1F25 /* Sources */,
+				281CF79A1AE6E01C00BC1F25 /* Frameworks */,
+				281CF79B1AE6E01C00BC1F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				281CF79F1AE6E01C00BC1F25 /* PBXTargetDependency */,
+			);
+			name = DCZMutableWebViewerTests;
+			productName = DCZMutableWebViewerTests;
+			productReference = 281CF79D1AE6E01C00BC1F25 /* DCZMutableWebViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		281CF7791AE6E01C00BC1F25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Dean Zaslow";
+				TargetAttributes = {
+					281CF7801AE6E01C00BC1F25 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					281CF79C1AE6E01C00BC1F25 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 281CF7801AE6E01C00BC1F25;
+					};
+				};
+			};
+			buildConfigurationList = 281CF77C1AE6E01C00BC1F25 /* Build configuration list for PBXProject "DCZMutableWebViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 281CF7781AE6E01C00BC1F25;
+			productRefGroup = 281CF7821AE6E01C00BC1F25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				281CF7801AE6E01C00BC1F25 /* DCZMutableWebViewer */,
+				281CF79C1AE6E01C00BC1F25 /* DCZMutableWebViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		281CF77F1AE6E01C00BC1F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281CF7931AE6E01C00BC1F25 /* Main.storyboard in Resources */,
+				281CF7981AE6E01C00BC1F25 /* LaunchScreen.xib in Resources */,
+				281CF7951AE6E01C00BC1F25 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281CF79B1AE6E01C00BC1F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		281CF77D1AE6E01C00BC1F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281CF78A1AE6E01C00BC1F25 /* AppDelegate.m in Sources */,
+				281CF78D1AE6E01C00BC1F25 /* MasterViewController.m in Sources */,
+				281CF7871AE6E01C00BC1F25 /* main.m in Sources */,
+				281CF7901AE6E01C00BC1F25 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281CF7991AE6E01C00BC1F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281CF7A41AE6E01C00BC1F25 /* DCZMutableWebViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		281CF79F1AE6E01C00BC1F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 281CF7801AE6E01C00BC1F25 /* DCZMutableWebViewer */;
+			targetProxy = 281CF79E1AE6E01C00BC1F25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		281CF7911AE6E01C00BC1F25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				281CF7921AE6E01C00BC1F25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		281CF7961AE6E01C00BC1F25 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				281CF7971AE6E01C00BC1F25 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		281CF7A51AE6E01C00BC1F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		281CF7A61AE6E01C00BC1F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		281CF7A81AE6E01C00BC1F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DCZMutableWebViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		281CF7A91AE6E01C00BC1F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DCZMutableWebViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		281CF7AB1AE6E01C00BC1F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DCZMutableWebViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCZMutableWebViewer.app/DCZMutableWebViewer";
+			};
+			name = Debug;
+		};
+		281CF7AC1AE6E01C00BC1F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DCZMutableWebViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCZMutableWebViewer.app/DCZMutableWebViewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		281CF77C1AE6E01C00BC1F25 /* Build configuration list for PBXProject "DCZMutableWebViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281CF7A51AE6E01C00BC1F25 /* Debug */,
+				281CF7A61AE6E01C00BC1F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		281CF7A71AE6E01C00BC1F25 /* Build configuration list for PBXNativeTarget "DCZMutableWebViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281CF7A81AE6E01C00BC1F25 /* Debug */,
+				281CF7A91AE6E01C00BC1F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		281CF7AA1AE6E01C00BC1F25 /* Build configuration list for PBXNativeTarget "DCZMutableWebViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281CF7AB1AE6E01C00BC1F25 /* Debug */,
+				281CF7AC1AE6E01C00BC1F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 281CF7791AE6E01C00BC1F25 /* Project object */;
+}
