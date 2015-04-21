@@ -9,6 +9,7 @@
 #import "DCZTableViewController.h"
 #import "DCZURLViewController.h"
 #import "DCZWebPage.h"
+#import "DCZAddViewController.h"
 
 @interface DCZTableViewController ()
 
@@ -17,6 +18,11 @@
 @end
 
 @implementation DCZTableViewController
+
+- (IBAction)addNewPage:(id)sender {
+    DCZAddViewController *addPage = [[DCZAddViewController alloc] init];
+    [addPage loadView];
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -29,10 +35,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewPage:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    
+    DCZWebPage *google = [[DCZWebPage alloc] init];
+    google.pageName = @"Google";
+    google.url = @"http://www.google.com";
+    [_webPages addObject:google];
+    
     self.urlContr = (DCZURLViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
@@ -42,22 +50,29 @@
 }
 
 - (void)insertNewPage:(id)sender {
+    
+    // Not done yet
     if (!self.webPages) {
         self.webPages = [[NSMutableArray alloc] init];
     }
+    
     [self.webPages insertObject:[[DCZWebPage init] alloc] atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath]
+                          withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - Segues
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue
+                 sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         DCZWebPage *webPage = self.webPages[indexPath.row];
+        
         DCZURLViewController *urlContr = (DCZURLViewController *)[[segue destinationViewController] topViewController];
         [urlContr setWebPage:webPage];
+        
         urlContr.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         urlContr.navigationItem.leftItemsSupplementBackButton = YES;
     }
@@ -69,15 +84,20 @@
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section {
+    
     return self.webPages.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"
+                                                            forIndexPath:indexPath];
 
     DCZWebPage *webPage = self.webPages[indexPath.row];
-    cell.textLabel.text = [webPage description];
+    cell.textLabel.text = [webPage pageName];
     return cell;
 }
 
@@ -86,10 +106,14 @@
     return YES;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self.webPages removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [tableView deleteRowsAtIndexPaths:@[indexPath]
+                         withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }

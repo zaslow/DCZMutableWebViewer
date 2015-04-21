@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DCZWebPage.h"
 
 @interface DCZURLViewController : UIViewController
 
-@property (strong, nonatomic) id webPage;
-@property (weak, nonatomic) IBOutlet UILabel *webPageLabel;
+@property (strong, nonatomic) DCZWebPage *webPage;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 

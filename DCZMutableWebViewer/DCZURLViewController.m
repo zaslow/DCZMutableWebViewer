@@ -7,6 +7,7 @@
 //
 
 #import "DCZURLViewController.h"
+#import "DCZWebPage.h"
 
 @interface DCZURLViewController ()
 
@@ -16,20 +17,16 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setWebPage:(id)newWebPage {
-    if (_webPage != newWebPage) {
-        _webPage = newWebPage;
-            
-        // Update the view.
-        [self configureView];
-    }
-}
-
 - (void)configureView {
-    // Update the user interface for the detail item.
-    if (self.webPage) {
-        self.webPageLabel.text = [self.webPage description];
-    }
+    
+    // Set the name & url of the webpage to load
+    [_webPage setPageName: @"Google"];
+    [_webPage setUrl: @"http://www.google.com"];
+    
+    // Initiate a connection to the webpage
+    NSURL *URL = [NSURL URLWithString:_webPage.url];
+    NSURLRequest *urlReq = [NSURLRequest requestWithURL:URL];
+    [_webView loadRequest:urlReq];
 }
 
 - (void)viewDidLoad {

@@ -16,6 +16,7 @@
 		281CF7981AE6E01C00BC1F25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281CF7961AE6E01C00BC1F25 /* LaunchScreen.xib */; };
 		281CF7A41AE6E01C00BC1F25 /* DCZMutableWebViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF7A31AE6E01C00BC1F25 /* DCZMutableWebViewerTests.m */; };
 		281CF7B51AE6E47400BC1F25 /* DCZWebPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF7B41AE6E47400BC1F25 /* DCZWebPage.m */; };
+		281CF7F31AE6FE6E00BC1F25 /* DCZAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF7F21AE6FE6E00BC1F25 /* DCZAddViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		281CF7A31AE6E01C00BC1F25 /* DCZMutableWebViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCZMutableWebViewerTests.m; sourceTree = "<group>"; };
 		281CF7B31AE6E47400BC1F25 /* DCZWebPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCZWebPage.h; sourceTree = "<group>"; };
 		281CF7B41AE6E47400BC1F25 /* DCZWebPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCZWebPage.m; sourceTree = "<group>"; };
+		281CF7F11AE6FE6E00BC1F25 /* DCZAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCZAddViewController.h; sourceTree = "<group>"; };
+		281CF7F21AE6FE6E00BC1F25 /* DCZAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCZAddViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				281CF7891AE6E01C00BC1F25 /* DCZAppDelegate.m */,
 				281CF7B31AE6E47400BC1F25 /* DCZWebPage.h */,
 				281CF7B41AE6E47400BC1F25 /* DCZWebPage.m */,
+				281CF7F11AE6FE6E00BC1F25 /* DCZAddViewController.h */,
+				281CF7F21AE6FE6E00BC1F25 /* DCZAddViewController.m */,
 				281CF78B1AE6E01C00BC1F25 /* DCZTableViewController.h */,
 				281CF78C1AE6E01C00BC1F25 /* DCZTableViewController.m */,
 				281CF78E1AE6E01C00BC1F25 /* DCZURLViewController.h */,
@@ -233,6 +238,7 @@
 				281CF78D1AE6E01C00BC1F25 /* DCZTableViewController.m in Sources */,
 				281CF7B51AE6E47400BC1F25 /* DCZWebPage.m in Sources */,
 				281CF7871AE6E01C00BC1F25 /* main.m in Sources */,
+				281CF7F31AE6FE6E00BC1F25 /* DCZAddViewController.m in Sources */,
 				281CF7901AE6E01C00BC1F25 /* DCZURLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
