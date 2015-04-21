@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		281CF7871AE6E01C00BC1F25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF7861AE6E01C00BC1F25 /* main.m */; };
-		281CF78A1AE6E01C00BC1F25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF7891AE6E01C00BC1F25 /* AppDelegate.m */; };
-		281CF78D1AE6E01C00BC1F25 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF78C1AE6E01C00BC1F25 /* MasterViewController.m */; };
-		281CF7901AE6E01C00BC1F25 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF78F1AE6E01C00BC1F25 /* DetailViewController.m */; };
+		281CF78A1AE6E01C00BC1F25 /* DCZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF7891AE6E01C00BC1F25 /* DCZAppDelegate.m */; };
+		281CF78D1AE6E01C00BC1F25 /* DCZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF78C1AE6E01C00BC1F25 /* DCZTableViewController.m */; };
+		281CF7901AE6E01C00BC1F25 /* DCZURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281CF78F1AE6E01C00BC1F25 /* DCZURLViewController.m */; };
 		281CF7931AE6E01C00BC1F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281CF7911AE6E01C00BC1F25 /* Main.storyboard */; };
 		281CF7951AE6E01C00BC1F25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281CF7941AE6E01C00BC1F25 /* Images.xcassets */; };
 		281CF7981AE6E01C00BC1F25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281CF7961AE6E01C00BC1F25 /* LaunchScreen.xib */; };
@@ -31,12 +31,12 @@
 		281CF7811AE6E01C00BC1F25 /* DCZMutableWebViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCZMutableWebViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		281CF7851AE6E01C00BC1F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		281CF7861AE6E01C00BC1F25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		281CF7881AE6E01C00BC1F25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		281CF7891AE6E01C00BC1F25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		281CF78B1AE6E01C00BC1F25 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		281CF78C1AE6E01C00BC1F25 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		281CF78E1AE6E01C00BC1F25 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		281CF78F1AE6E01C00BC1F25 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		281CF7881AE6E01C00BC1F25 /* DCZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCZAppDelegate.h; sourceTree = "<group>"; };
+		281CF7891AE6E01C00BC1F25 /* DCZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCZAppDelegate.m; sourceTree = "<group>"; };
+		281CF78B1AE6E01C00BC1F25 /* DCZTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCZTableViewController.h; sourceTree = "<group>"; };
+		281CF78C1AE6E01C00BC1F25 /* DCZTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCZTableViewController.m; sourceTree = "<group>"; };
+		281CF78E1AE6E01C00BC1F25 /* DCZURLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCZURLViewController.h; sourceTree = "<group>"; };
+		281CF78F1AE6E01C00BC1F25 /* DCZURLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCZURLViewController.m; sourceTree = "<group>"; };
 		281CF7921AE6E01C00BC1F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		281CF7941AE6E01C00BC1F25 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		281CF7971AE6E01C00BC1F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -84,12 +84,12 @@
 		281CF7831AE6E01C00BC1F25 /* DCZMutableWebViewer */ = {
 			isa = PBXGroup;
 			children = (
-				281CF7881AE6E01C00BC1F25 /* AppDelegate.h */,
-				281CF7891AE6E01C00BC1F25 /* AppDelegate.m */,
-				281CF78B1AE6E01C00BC1F25 /* MasterViewController.h */,
-				281CF78C1AE6E01C00BC1F25 /* MasterViewController.m */,
-				281CF78E1AE6E01C00BC1F25 /* DetailViewController.h */,
-				281CF78F1AE6E01C00BC1F25 /* DetailViewController.m */,
+				281CF7881AE6E01C00BC1F25 /* DCZAppDelegate.h */,
+				281CF7891AE6E01C00BC1F25 /* DCZAppDelegate.m */,
+				281CF78B1AE6E01C00BC1F25 /* DCZTableViewController.h */,
+				281CF78C1AE6E01C00BC1F25 /* DCZTableViewController.m */,
+				281CF78E1AE6E01C00BC1F25 /* DCZURLViewController.h */,
+				281CF78F1AE6E01C00BC1F25 /* DCZURLViewController.m */,
 				281CF7911AE6E01C00BC1F25 /* Main.storyboard */,
 				281CF7941AE6E01C00BC1F25 /* Images.xcassets */,
 				281CF7961AE6E01C00BC1F25 /* LaunchScreen.xib */,
@@ -224,10 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281CF78A1AE6E01C00BC1F25 /* AppDelegate.m in Sources */,
-				281CF78D1AE6E01C00BC1F25 /* MasterViewController.m in Sources */,
+				281CF78A1AE6E01C00BC1F25 /* DCZAppDelegate.m in Sources */,
+				281CF78D1AE6E01C00BC1F25 /* DCZTableViewController.m in Sources */,
 				281CF7871AE6E01C00BC1F25 /* main.m in Sources */,
-				281CF7901AE6E01C00BC1F25 /* DetailViewController.m in Sources */,
+				281CF7901AE6E01C00BC1F25 /* DCZURLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

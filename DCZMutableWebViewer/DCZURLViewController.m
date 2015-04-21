@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Dean Zaslow. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "DCZURLViewController.h"
 
-@interface DetailViewController ()
+@interface DCZURLViewController ()
 
 @end
 
-@implementation DetailViewController
+@implementation DCZURLViewController
 
 #pragma mark - Managing the detail item
 
