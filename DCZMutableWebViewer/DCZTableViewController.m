@@ -8,10 +8,12 @@
 
 #import "DCZTableViewController.h"
 #import "DCZURLViewController.h"
+#import "DCZWebPage.h"
 
 @interface DCZTableViewController ()
 
-@property NSMutableArray *objects;
+@property NSMutableArray *webPages;
+
 @end
 
 @implementation DCZTableViewController
@@ -29,9 +31,9 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewPage:)];
     self.navigationItem.rightBarButtonItem = addButton;
-    self.detailViewController = (DCZURLViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.urlContr = (DCZURLViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,11 +41,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
+- (void)insertNewPage:(id)sender {
+    if (!self.webPages) {
+        self.webPages = [[NSMutableArray alloc] init];
     }
-    [self.objects insertObject:[NSDate date] atIndex:0];
+    [self.webPages insertObject:[[DCZWebPage init] alloc] atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
@@ -53,11 +55,11 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
-        DCZURLViewController *controller = (DCZURLViewController *)[[segue destinationViewController] topViewController];
-        [controller setDetailItem:object];
-        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-        controller.navigationItem.leftItemsSupplementBackButton = YES;
+        DCZWebPage *webPage = self.webPages[indexPath.row];
+        DCZURLViewController *urlContr = (DCZURLViewController *)[[segue destinationViewController] topViewController];
+        [urlContr setWebPage:webPage];
+        urlContr.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+        urlContr.navigationItem.leftItemsSupplementBackButton = YES;
     }
 }
 
@@ -68,14 +70,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return self.webPages.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    DCZWebPage *webPage = self.webPages[indexPath.row];
+    cell.textLabel.text = [webPage description];
     return cell;
 }
 
@@ -86,7 +88,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.objects removeObjectAtIndex:indexPath.row];
+        [self.webPages removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.

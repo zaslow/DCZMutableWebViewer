@@ -12,8 +12,7 @@
 
 @interface DCZTableViewController : UITableViewController
 
-@property (strong, nonatomic) DCZURLViewController *detailViewController;
-
+@property (strong, nonatomic) DCZURLViewController *urlContr;
 
 @end
 

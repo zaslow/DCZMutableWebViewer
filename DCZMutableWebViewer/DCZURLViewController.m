@@ -16,9 +16,9 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
+- (void)setWebPage:(id)newWebPage {
+    if (_webPage != newWebPage) {
+        _webPage = newWebPage;
             
         // Update the view.
         [self configureView];
@@ -27,8 +27,8 @@
 
 - (void)configureView {
     // Update the user interface for the detail item.
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+    if (self.webPage) {
+        self.webPageLabel.text = [self.webPage description];
     }
 }
 
